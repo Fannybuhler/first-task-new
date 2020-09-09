@@ -1,0 +1,333 @@
+/*copied from Leon records*/
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 12px;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+li a:hover {
+    background-color: #f1f1f1;
+}
+
+/*hello color block*/
+.hello {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 800%;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    margin-left: 3px;
+    background: linear-gradient(0.40turn, #b179b4, #7f374d, #613685);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.flex-child {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: left;
+}
+
+.one {
+    background-color: #994a6b;
+}
+
+/*.one img {
+	box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}*/
+
+.one video {
+	box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.two {
+    background: linear-gradient(0.37turn, #f1f1f1, #fff, #f1f1f1);
+}
+
+.three {
+    background: transparent;
+    position: absolute;
+    overflow: hidden;
+}
+
+.arrow-circle-down {
+    position: absolute;
+    bottom: 5%;
+    display: block;
+}
+
+.bounce {
+	-webkit-animation: bounce 3s;
+	        animation: bounce 3s;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+	60% {
+		-webkit-transform: translateY(-12px);
+		        transform: translateY(-12px);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	25%,
+	50%,
+	75%,
+	100% {
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-12px);
+	}
+	60% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-12px);
+	}
+}
+
+/*About me*/
+.about-me-parent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10% 10% 10% 6%;
+}
+
+.image-of-me img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+}
+
+.about-me-text h2 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    border-left: 6px solid #994a6b;
+    height: inherit;
+    margin: 0 4% 0 6%;
+}
+
+/*Things and stuff*/
+.things-and-stuff {
+    background: #f176bc1c;
+    padding: 10% 0 10% 0;
+}
+.things, .stuff {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    margin: 0 20% 5% 20%;
+}
+
+.things h2, .stuff h2 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/*things and stuff move vertical line because 
+it's off centered due to <h2> length*/
+.things .vertical-line {
+    position: relative;
+    right: 7px;
+}
+
+/*Contact page*/
+.contact {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+video {
+    max-width: 100vw;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Andale Mono", monospace; 
+}
+
+.overlay h2 {
+    font-size: 500%;
+    margin-bottom: 0;
+}
+.overlay h3 {
+    font-size: 150%;
+    position: relative;
+    bottom: 4px;
+}
+
+.overlay h4 {
+    font-size: 100%
+}
+
+.overlay a {
+    text-decoration: none;
+    color: white;
+}
+
+.overlay a:hover {
+    color: #f9f9f971;
+}
+
+/*Footer*/
+footer {
+    height: 30vh;
+    background: #994a6b;
+}
+
+.footer-img {
+	height: 100%;
+}
+
+footer img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-img p {
+    position: relative;
+    bottom: 18vh;
+    font-size: 100%;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Andale Mono", monospace;
+}
+
+.footer-img a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-img a:hover {
+    color: #f9f9f971;
+}
+
+/*When screen gets smaller*/
+@media only screen and (max-width: 650px)
+{
+    /*Hello color block*/
+    h1 {
+        font-size: 400%;
+    }
+
+    .dot {
+        height: 13px;
+        width: 13px;
+    }
+
+    .hello {
+        align-items: flex-start;
+        height: 60vh;
+    }
+
+    .flex-child {
+        margin-bottom: 8px;
+    }
+
+    /*About Me*/
+    .about-me-parent {
+    	flex-direction: column;
+    }
+
+    .about-me-text {
+    	margin: 7% 0 7% 0;
+    }
+
+    .image-of-me {
+        width: 60%;
+        margin: 10%;
+    }
+
+    /*video*/
+    video {
+        height: 60vh;
+    }
+}
