@@ -177,18 +177,17 @@ h1 {
 }
 
 /* GRID */
-.whole-pink-grid {
-    padding-top: 20%;
-    padding-bottom: 20%;
-    background: #f176bc1c;
-}
 .grid-container {
+    height: 100vh;
+    background: #f176bc1c;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 200px 200px;
-    gap: 20px;
-    padding: 0px 10vw;
-    max-width: 100vw;
+    grid-template-areas:
+    "header header header header header header header"
+    "side-left stuff picture-one picture-two picture-three picture-four side-right"
+    "side-left stuff picture-five picture-six picture-seven picture-eight side-right"
+    "footer footer footer footer footer footer footer";
+    grid-template-rows: 10% 1fr 1fr 10%;
+    grid-template-columns: 10% 2fr 1fr 1fr 1fr 1fr 10%;
 }
 
 .grid-item {
@@ -224,8 +223,7 @@ h1 {
 
 .item-six{
     grid-area: picture-one;
-   /* background-image: url(https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    */
+    background-image: url(https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
 .item-seven{
@@ -255,6 +253,9 @@ h1 {
 .item-thirteen{
     grid-area: picture-eight;
 }
+
+
+
 
 /*Things and stuff*/
 /*
