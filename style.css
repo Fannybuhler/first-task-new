@@ -1,4 +1,3 @@
-/*copied from Leon records*/
 html {
     font-size: 16px;
 }
@@ -74,14 +73,6 @@ h1 {
 .one {
     background-color: #994a6b;
 }
-
-/*.one img {
-	box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-}*/
 
 .one video {
 	box-sizing: border-box;
@@ -185,7 +176,88 @@ h1 {
     margin: 0 4% 0 6%;
 }
 
+/* GRID */
+.whole-pink-grid {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background: #f176bc1c;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    padding: 0px 10vw;
+    max-width: 100vw;
+}
+
+.grid-item {
+    border: 2px solid #994a6b;
+    padding: 20px;
+}
+
+.item-one {
+    grid-area: stuff;
+}
+
+.horizontal-line {
+    border-top: 6px solid #994a6b;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.item-two{
+    grid-area: header;
+}
+
+.item-three{
+    grid-area: side-right;
+}
+
+.item-four{
+    grid-area: side-left;
+}
+
+.item-five{
+    grid-area: footer;
+}
+
+.item-six{
+    grid-area: picture-one;
+   /* background-image: url(https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    */
+}
+
+.item-seven{
+    grid-area: picture-two;
+}
+
+.item-eight{
+    grid-area: picture-three;
+}
+
+.item-nine{
+    grid-area: picture-four;
+}
+
+.item-ten{
+    grid-area: picture-five;
+}
+
+.item-eleven{
+    grid-area: picture-six;
+}
+
+.item-twelve{
+    grid-area: picture-seven;
+}
+
+.item-thirteen{
+    grid-area: picture-eight;
+}
+
 /*Things and stuff*/
+/*
 .things-and-stuff {
     background: #f176bc1c;
     padding: 10% 0 10% 0;
@@ -202,14 +274,14 @@ h1 {
     font-weight: 500;
     display: flex;
     align-items: center;
-}
+}*/
 
 /*things and stuff move vertical line because 
 it's off centered due to <h2> length*/
-.things .vertical-line {
+/*.things .vertical-line {
     position: relative;
     right: 7px;
-}
+}/*
 
 /*Contact page*/
 .contact {
