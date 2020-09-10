@@ -1,0 +1,106 @@
+/* Grid from Neha*/
+:root {
+    /* variables */
+    --spacing: 24px;
+    --min-card-width: 250px;
+    --ratio-percent: 100%;
+    --addl-height: 0px;
+  }
+
+.grid {
+    height: 90%;
+    /* hide all the overflowing cards */
+    overflow: hidden;
+    /*bring content in on the sides*/
+    margin: 0 10% 0 10%;
+    /*make cards go into rows as window shrinks*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--min-card-width), 1fr));
+    grid-column-gap: var(--spacing);
+}
+
+/* I don't really understand how the negative values work
+and I also don't know why the position needs to be relative
+- but it has to. */
+article {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+.grid ul {
+    /* clear ul styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+    /* additional gap set to 24px in :root */
+    grid-row-gap: var(--spacing);
+}
+
+.grid li {
+    /* set up aspect ratio hack. Don't understand this hack*/
+    position: relative;
+    /*border: 1px solid; *//*So we can see what's going on*/
+}
+
+.absolute-fill {
+    /*position: absolute;*//*THIS IS WHERE IT FUCKS UP*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aspect-ratio {
+    padding-top: var(--ratio-percent);
+}
+
+.aspect-ratio:hover {
+    -ms-transform: scale(0.95); /* IE 9 */
+    -webkit-transform: scale(0.95); /* Safari 3-8 */
+    transform: scale(0.95); 
+}
+
+.box-one{
+    background-image: url(https://images.pexels.com/photos/2911521/pexels-photo-2911521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-two{
+    background-image: url(https://images.pexels.com/photos/774548/pexels-photo-774548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-three {
+    background-image: url(https://images.pexels.com/photos/260286/pexels-photo-260286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-four {
+    background-image: url(https://images.pexels.com/photos/310452/pexels-photo-310452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-four {
+    background-image: url(https://images.pexels.com/photos/3109830/pexels-photo-3109830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-five {
+    background-image: url(https://images.pexels.com/photos/1030889/pexels-photo-1030889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+}
+
+.box-six {
+    background-image: url(https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-seven {
+    background-image: url(https://images.pexels.com/photos/248921/pexels-photo-248921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.box-eight {
+    background-image: url(https://images.pexels.com/photos/1293006/pexels-photo-1293006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+/*.shadow {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12), 
+    0 2px 2px 0 rgba(0,0,0,0.12), 
+    0 4px 4px 0 rgba(0,0,0,0.12), 
+    0 8px 8px 0 rgba(0,0,0,0.12),
+    0 16px 16px 0 rgba(0,0,0,0.12);
+}*/

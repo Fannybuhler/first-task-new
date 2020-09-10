@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="grid.css" type="text/css">
     <title>Fanny Buhlér</title>
   </head>
   <body>
 
-    <!--Navigation bar with list, doesn't do anything yet-->
+    <!--Navigation bar-->
     <section class="navBar">
       <nav>
         <ul>
@@ -21,14 +22,14 @@
 
     <!--hello color block-->
     <section class="hello">
-        <div class="flex-child one">
-            <video src="images/video.mp4" autoplay loop muted></video>
-        </div>
-        <div class="flex-child two"></div>
-        <div class="flex-child three">
-          <h1>He<br>llo<span class="dot"></span></h1>
-          <img class="arrow-circle-down bounce" src="images/arrow.png" alt="arrow"> 
-        </div>
+      <div class="flex-child one">
+        <video src="images/video.mp4" autoplay loop muted></video>
+      </div>
+      <div class="flex-child two"></div>
+      <div class="flex-child three">
+        <h1>He<br>llo<span class="dot"></span></h1>
+        <img class="arrow-circle-down bounce" src="images/arrow.png" alt="arrow"> 
+      </div>
     </section>
 
     <!--image of me-->
@@ -46,83 +47,54 @@
       </div>
     </section>
 
-    <!--text content things-->
-    <section class="grid-container">
-      <div class="grid-item item-one">
+    <!--pink section grid and projects-->
+    <section class="whole-pink-grid">
+      <div class="projects">
         <h2>Projects</h2>
-        <div class="horizontal-line"></div>
-        <p>Projects coming up soon!<br>Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="vertical-line"></div>
+        <p>This will be an explanation of the projects I've worked on</p>
       </div>
-      <div class="grid-item item-two">
-        header
-      </div>
-      <div class="grid-item item-three">
-        side right
-      </div>
-      <div class="grid-item item-four">
-        side left
-      </div>
-      <div class="grid-item item-five">
-        footer
-      </div>
-      <div class="grid-item item-six">
-        picture 1
-      </div>
-      <div class="grid-item item-seven">
-        picture 2
-      </div>
-      <div class="grid-item item-eight">
-        picture 3
-      </div>
-      <div class="grid-item item-nine">
-        picture 4
-      </div>
-      <div class="grid-item item-ten">
-        picture 5
-      </div>
-      <div class="grid-item item-eleven">
-        picture 6
-      </div>
-      <div class="grid-item item-twelve">
-        picture 7
-      </div>
-      <div class="grid-item item-thirteen">
-        picture 8
+
+      <!--Grid-->
+      <div class="grid">
+        <aside class="aspect-ratio"></aside>
+        <article>
+          <ul class="grid absolute-fill">
+            <li class="aspect-ratio box-one shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-two shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-three shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-four shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-five shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-six shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-seven shadow">
+              <div class="absolute-fill"></div>
+            </li>
+            <li class="aspect-ratio box-eight shadow">
+              <div class="absolute-fill"></div>
+            </li>
+          </ul>
+        </article>
       </div>
     </section>
     
-    <!--
-    <section class="things-and-stuff">
-      <div class="things">
-        <h2>Things and stuff</h2>
-        <div class="vertical-line"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>-->
-
-      <!--text content stuff-->
-      <!--<div class="stuff">
-      <h2>Stuff and things</h2>
-      <div class="vertical-line"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!--footer-->
+    <footer>
+      <div class="footer-img">
+        <img src="images/photo-from-video.png" alt="footer picture with pink colors">
+        <p>Email me: <a href="mailto:fanny.buhler@hyperisland.se">fanny.buhler@hyperisland.se</a></p>
       </div>
-    </section>-->
+    </footer>
   </body>
-
-  <!--footer for styling-->
-  <footer>
-    <div class="footer-img">
-      <img src="images/photo-from-video.png" alt="footer picture with pink colors">
-      <p>Email me: <a href="mailto:fanny.buhler@hyperisland.se">fanny.buhler@hyperisland.se</a></p>
-    </div>
-  </footer>
 </html>
